@@ -1,6 +1,8 @@
 import * as React from 'react'
 import {useEffect, useState} from 'react'
+import './styles.module.css'
 import styles from './styles.module.css'
+
 
 const defs = {
     nodeWidth: 400,
