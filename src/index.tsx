@@ -143,7 +143,6 @@ const getPosition = ({
                 y: nodesInColumn[column]++ * (nodeHeight + pathLength / 2)
             }
 
-            console.log(parentPosition.x, maxSize)
             if (parentPosition.x > maxSize.width) maxSize.width = parentPosition.x
             if (parentPosition.y > maxSize.height) maxSize.height = parentPosition.y
 
