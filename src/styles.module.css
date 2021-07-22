@@ -1,0 +1,48 @@
+.chart{
+  width: inherit;
+  height: inherit;
+  overflow: auto;
+  position: relative;
+}
+
+.path {
+  fill:none;
+  pointer-events:all;
+  stroke-dashoffset: 10px;
+  stroke-width: 2px;
+  stroke: #0877BDFF;
+  stroke-dasharray: 9 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .path {
+    animation: path infinite 2s linear;
+  }
+
+  .path:hover {
+    stroke: #bd085c;
+    transition: 0.5s;
+  }
+}
+
+@keyframes path {
+  from {
+    stroke-dashoffset: 10;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.node {
+  height: 30px;
+  width: 400px;
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.node:hover {
+  background-color: rebeccapurple;
+  transition: 0.5s;
+}
